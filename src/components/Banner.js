@@ -3,7 +3,7 @@ import pmiLogo from "../Assets/pmilogo.png"; // Make sure the path to your image
 
 const Announcement = () => {
   return (
-    <section className="bg-green-100 py-8 px-4 md:px-16 flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+    <section className="bg-green-100 py-8 px-4 md:px-16 flex flex-col md:flex-row items-center justify-center text-center md:text-center">
       {/* Logo */}
       <div className="mb-4 md:mb-0 md:mr-6">
         <img
@@ -15,7 +15,7 @@ const Announcement = () => {
 
       {/* Content */}
       <div className="flex-1">
-        <h2 className="text-2xl md:text-3xl font-bold text-pink-700 mb-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-pink-600 mb-4">
           Next PMP® training batch starting from{" "}
           <span className="text-purple-600">11th Jan</span>
         </h2>

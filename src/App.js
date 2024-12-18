@@ -16,7 +16,7 @@ import About from "./components/About"; // About us page
 import Blogs from "./components/Blogs"; // Blogs page
 import Footer from "./components/Footer";
 import Login from "./components/Login";
-
+import Contactus from "./components/Contactus";
 
 function App() {
   return (
@@ -50,7 +50,7 @@ function App() {
           <Route path="/training" element={<Training />} />
           <Route path="/mock-exam" element={<MockExam />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contactus />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/login" element={<Login />} />
 
