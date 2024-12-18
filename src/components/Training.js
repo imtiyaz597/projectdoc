@@ -7,6 +7,10 @@ import flashcardsImg from "../Assets/flashcard.png";
 import personalizedsupportimg from "../Assets/personalizedsupport.png";
 import mockExamImg from "../Assets/mockexam.png";
 import applicationSupportImg from "../Assets/Applicationsupport.png";
+import FAQ from "./FAQ"; 
+import Contact from "./Contact"; 
+import Footer  from "./Footer";
+
 
 const Hero = () => {
   return (
@@ -219,6 +223,11 @@ const Hero = () => {
     </p>
   </div>
 </section>
+{/* FAQ Section */}
+<FAQ />
+{/* Contact Section */}
+<Contact />
+<Footer />
     </>
   );
 };

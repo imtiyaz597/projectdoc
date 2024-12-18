@@ -14,6 +14,8 @@ import Training from "./components/Training"; // Training page
 import MockExam from "./components/MockExam"; // Mock exam page
 import About from "./components/About"; // About us page
 import Blogs from "./components/Blogs"; // Blogs page
+import Footer from "./components/Footer";
+import Login from "./components/Login";
 
 
 function App() {
@@ -39,6 +41,7 @@ function App() {
                 <Testimonial />
                 <FAQ />
                 <Contact />
+                <Footer />
               </>
             }
           />
@@ -49,6 +52,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/login" element={<Login />} />
 
           {/* Catch-All Redirect */}
           <Route path="*" element={<Hero />} /> {/* Invalid route goes to home */}
