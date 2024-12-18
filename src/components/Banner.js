@@ -1,6 +1,6 @@
 import React from "react";
 import pmiLogo from "../Assets/pmilogo.png"; // Make sure the path to your image is correct
-
+import './Banner.css';
 const Announcement = () => {
   return (
     <section className="bg-green-100 py-8 px-4 md:px-16 flex flex-col md:flex-row items-center justify-center text-center md:text-center">

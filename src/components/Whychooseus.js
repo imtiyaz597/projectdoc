@@ -1,10 +1,10 @@
 import React from "react";
 import './whychooseus.css';
-import trainerImg from '../Assets/Trainer.png'
-import elearningImg from '../Assets/elearning.png'
-import personalisedsupportImg from '../Assets/personalisedsupport.png'
-import  flexibleImg from '../Assets/flexible.png';
-import  applicationImg from '../Assets/application.png';
+import trainerImg from '../Assets/Trainer.png';
+import elearningImg from '../Assets/elearning.png';
+import personalisedsupportImg from '../Assets/personalisedsupport.png';
+import flexibleImg from '../Assets/flexible.png';
+import applicationImg from '../Assets/application.png';
 
 const benefits = [
   {
@@ -42,6 +42,7 @@ const benefits = [
 const WhyChooseUs = () => {
   return (
     <div className="hero-container">
+      <h1 className="section-header">Why Choose Us</h1>
       {benefits.map((benefit, index) => (
         <div key={index} className="hero-item">
           <div className="text-section">

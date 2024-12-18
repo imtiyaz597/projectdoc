@@ -39,19 +39,18 @@ export default function TrainerProfile() {
   const activeContent = tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-purple-50 p-8">
+    <div className="flex flex-col lg:flex-row items-center justify-center h-auto bg-purple-50 p-4 lg:p-6">
       {/* Content Section */}
-      <div className="custom-light-purple rounded-lg shadow-lg p-8 w-full lg:w-1/2">
-
-        <h1 className="text-4xl font-bold text-black mb-4">About the trainer</h1>
+      <div className="custom-light-purple rounded-lg shadow-lg p-4 lg:p-6 w-full lg:w-1/2">
+        <h1 className="text-3xl lg:text-4xl font-bold text-black mb-4">About the trainer</h1>
 
         {/* Tabs */}
-        <div className="flex space-x-4 mb-6">
+        <div className="flex space-x-2 lg:space-x-4 mb-4">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-4 py-2 rounded-full font-semibold ${
+              className={`px-3 py-1 lg:px-4 lg:py-2 rounded-full font-semibold text-sm lg:text-base ${
                 activeTab === tab.id
                   ? "bg-purple-600 text-white"
                   : "bg-gray-200 text-gray-600"
@@ -64,15 +63,19 @@ export default function TrainerProfile() {
 
         {/* Dynamic Content */}
         <div>
-          <h2 className="text-2xl font-bold mb-2">{activeContent.heading}</h2>
-          <p className="text-gray-700 leading-relaxed mb-4">{activeContent.description}</p>
+          <h2 className="text-xl lg:text-2xl font-bold mb-2">
+            {activeContent.heading}
+          </h2>
+          <p className="text-gray-700 leading-relaxed text-sm lg:text-base mb-3">
+            {activeContent.description}
+          </p>
 
           {/* Tab Link */}
           <a
             href={activeContent.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-600 font-semibold underline"
+            className="text-purple-600 font-semibold underline text-sm lg:text-base"
           >
             {activeContent.linkText}
           </a>
@@ -80,12 +83,12 @@ export default function TrainerProfile() {
       </div>
 
       {/* Trainer Image */}
-      <div className="relative w-48 h-48 lg:w-64 lg:h-64 mt-8 lg:mt-0 lg:ml-8">
+      <div className="relative w-32 h-32 lg:w-48 lg:h-48 mt-4 lg:mt-0 lg:ml-6">
         <div className="w-full h-full rounded-full bg-purple-600 flex justify-center items-center">
           <img
             src={trainerImg}
             alt="Trainer"
-            className="w-44 h-44 lg:w-60 lg:h-60 object-cover rounded-full"
+            className="w-28 h-28 lg:w-44 lg:h-44 object-cover rounded-full"
           />
         </div>
       </div>
