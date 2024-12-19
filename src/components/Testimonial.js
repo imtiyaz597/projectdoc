@@ -6,39 +6,39 @@ const testimonials = [
       role: "Project Manager",
       feedback:
         "The PMP certification training at Edzest helped me gain a comprehensive understanding of project management. The hands-on approach and real-world examples made the learning process engaging.",
-      image: "john-doe.jpg", // Assuming you have an image named john-doe.jpg
+      image: "/assets/Jawed Ahmad.png", // Correct path from public folder
     },
     {
       name: "Jane Smith",
       role: "Business Analyst",
       feedback:
         "The support provided throughout the course was exceptional. The personalized guidance and resources helped me achieve my certification smoothly.",
-      image: "jane-smith.jpg",
+      image: "/assets/junaid Amid khan.png", // Correct path from public folder
     },
     {
       name: "Michael Brown",
       role: "Software Engineer",
       feedback:
         "Edzest's innovative teaching methods and flexible learning schedule made the preparation for PMP certification seamless.",
-      image: "michael-brown.jpg",
+      image: "/assets/Kalesh Nair.png", // Correct path from public folder
     },
     {
       name: "Emily Davis",
       role: "Team Lead",
       feedback:
         "The course structure and interactive sessions allowed me to grasp difficult concepts efficiently. I highly recommend Edzest for PMP certification training.",
-      image: "emily-davis.jpg",
+      image: "/assets/Kishore kumar chelikhani.png", // Correct path from public folder
     },
     {
       name: "William Wilson",
       role: "Senior Consultant",
       feedback:
         "Outstanding experience! The tailored support and updated study materials made a huge difference in my certification journey.",
-      image: "william-wilson.jpg",
+      image: "/assets/Lakmal jeewananda.png", // Correct path from public folder
     },
-  ];
-  
-  const Testimonials = () => {
+];
+
+const Testimonials = () => {
     return (
       <section className="container mx-auto px-6 py-16">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">
@@ -51,7 +51,7 @@ const testimonials = [
               className="flex-shrink-0 w-64 bg-white p-6 rounded-lg shadow-lg border border-gray-200"
             >
               <img
-                src={testimonial.image}
+                src={testimonial.image}  // Correct public path
                 alt={testimonial.name}
                 className="rounded-full w-24 h-24 object-cover mb-4 mx-auto"
               />
@@ -61,13 +61,13 @@ const testimonials = [
               <p className="text-gray-600 italic text-center">{testimonial.role}</p>
               <p className="text-gray-600 mt-4 text-center">{testimonial.feedback}</p>
               <button className="mt-4 px-4 py-2 bg-[#4748ac] text-white rounded hover:bg-[#37378c] block mx-auto">
-                View Full Review
+                Read more
               </button>
             </div>
           ))}
         </div>
       </section>
     );
-  };
-  
-  export default Testimonials;
+};
+
+export default Testimonials;

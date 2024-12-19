@@ -27,9 +27,14 @@ const Announcement = () => {
         </p>
 
         {/* Button */}
-        <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition duration-300">
-          Join Now
-        </button>
+        <a
+              href="https://exams.edzest.org/learn/batch/PMP-Exam-Prep-Jan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+            >
+              join now
+            </a>
       </div>
     </section>
   );

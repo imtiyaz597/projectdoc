@@ -17,7 +17,8 @@ import Blogs from "./components/Blogs"; // Blogs page
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Contactus from "./components/Contactus";
-
+import PrivacyPolicy from "./components/Privacy Policy";
+import TermsConditions from "./components/Terms & Conditions";
 function App() {
   return (
     <div className="App">
@@ -53,7 +54,8 @@ function App() {
           <Route path="/contact" element={<Contactus />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/login" element={<Login />} />
-
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/terms&conditions" element={<TermsConditions />} />
           {/* Catch-All Redirect */}
           <Route path="*" element={<Hero />} /> {/* Invalid route goes to home */}
         </Routes>

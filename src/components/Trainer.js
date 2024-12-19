@@ -10,8 +10,8 @@ export default function TrainerProfile() {
       id: "training",
       label: "Training",
       heading: "Training Programs",
-      link: "mailto:trainer@example.com",
-      linkText: "Send an email",
+      link: "https://exams.edzest.org/learn/batch/PMP-Exam-Prep-Jan",
+      linkText: "Join an upcoming batch",
       description:
         "Learn from comprehensive training programs designed to help you succeed in certification and develop practical project management skills.",
     },
@@ -28,7 +28,7 @@ export default function TrainerProfile() {
       id: "education",
       label: "Education",
       heading: "Educational Background",
-      link: "mailto:trainer@example.com",
+      link: "contact@edzest.org",
       linkText: "Send an email",
       description:
         "Certified PMP® instructor with formal education in project management and leadership, ensuring the highest quality training.",

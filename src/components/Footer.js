@@ -1,54 +1,71 @@
 import React from "react";
 import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 text-black py-6 mt-10">
-      <div className="container mx-auto px-4 sm:flex sm:justify-between sm:items-center">
-        {/* Company Info */}
-        <div className="mb-4 sm:mb-0">
-          <h4 className="text-lg font-semibold mb-2">Edzest education services.</h4>
-          <p className="text-sm">
-            SY no. 42, Near J R Layout Haralur,<br />
-            Bengaluru- 560102, Karnataka, India
-          </p>
+    <footer className="bg-gray-100 text-gray-800 py-6 border-t shadow-md">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="col-span-2">
+            <h4 className="text-lg font-semibold mb-3">Edzest Education Services (OPC) Pvt. Ltd.</h4>
+            <p className="text-sm leading-relaxed">
+              SY no. 42, Near J R Layout Haralur,<br />
+              Bengaluru- 560102, Karnataka, India
+            </p>
+          </div>
+
+          {/* Navigation Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-3">Company</h4>
+            <ul className="space-y-2">
+              <li><Link to="/about" className="hover:text-blue-500">About Us</Link></li>
+              <li><Link to="/privacypolicy" className="hover:text-blue-500">Privacy Policy</Link></li>
+              <li><Link to="/terms-and-conditions" className="hover:text-blue-500">Terms & Conditions</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-3">Help & Support</h4>
+            <ul className="space-y-2">
+              <li><Link to="/contact" className="hover:text-blue-500">Contact Us</Link></li>
+              <li><Link to="/refund-policy" className="hover:text-blue-500">Refund Policy</Link></li>
+            </ul>
+          </div>
         </div>
 
-        {/* Social Media Links */}
-        <div className="flex space-x-4">
-          {/* Social Media Icon Links */}
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-pink-500 flex items-center space-x-2"
-          >
-            <FaInstagram />
-            <span>Instagram</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/company/edzest"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-700 flex items-center space-x-2"
-          >
-            <FaLinkedinIn />
-            <span>LinkedIn</span>
-          </a>
-          <a
-            href="https://www.youtube.com/@edzest"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-red-500 flex items-center space-x-2"
-          >
-            <FaYoutube />
-            <span>YouTube</span>
-          </a>
-        </div>
-      </div>
+        <div className="flex justify-between items-center mt-8 border-t pt-4">
+          <div className="text-sm text-gray-600">&copy; {new Date().getFullYear()} Edzest Education Services. | All Rights Reserved</div>
 
-      <div className="border-t border-gray-700 mt-4 pt-4 text-center text-sm">
-        &copy; {new Date().getFullYear()} Edzest education services. | All Rights Reserved
+          {/* Social Media Links */}
+          <div className="flex space-x-4">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 text-2xl hover:opacity-75"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/edzest"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 text-2xl hover:opacity-75"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="https://www.youtube.com/@edzest"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-500 text-2xl hover:opacity-75"
+            >
+              <FaYoutube />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );

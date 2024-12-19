@@ -13,19 +13,19 @@ const Navbar = () => {
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-4">
           <Link to="/">
-            <img src={Logo} alt="Logo" className="h-19 w-16 object-contain" />
+            <img src={Logo} alt="Logo" className="h-28 w-24 ml-10 object-contain"  />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
-          <Link to="/training" className="hover:text-purple-600">Training</Link>
-          <Link to="/mock-exam" className="hover:text-purple-600">Mock Exam</Link>
-          <Link to="/about" className="hover:text-purple-600">About us</Link>
-          <Link to="/contact" className="hover:text-purple-600">Contact us</Link>
-          <Link to="/blogs" className="hover:text-purple-600">Blogs</Link>
+        <nav className="hidden md:flex space-x-12 text-gray-700 font-medium">
+          <Link to="/training" className="hover:text-purple-600 ml-60">Training</Link>
+          <Link to="/mock-exam" className="hover:text-purple-600 ml-60">Mock Exam</Link>
+          <Link to="/about" className="hover:text-purple-600 ml-60">About us</Link>
+          <Link to="/contact" className="hover:text-purple-600 ml-60">Contact us</Link>
+          <Link to="/blogs" className="hover:text-purple-600 ml-60">Blogs</Link>
         </nav>
 
         {/* Hamburger Menu for Mobile */}
@@ -56,7 +56,7 @@ const Navbar = () => {
 
         {/* Log In Button */}
         <Link
-          to="/login"
+          to="https://exams.edzest.org/learn/account/signin"
           className="hidden md:flex px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
         >
           Log in

@@ -178,7 +178,7 @@ const Hero = () => {
           </div>
           <div className="col-span-1 md:col-span-2 lg:col-span-3 flex justify-center my-8">
             <a
-              href="https://your-enroll-link.com"
+              href="https://exams.edzest.org/learn/batch/PMP-Exam-Prep-Jan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"

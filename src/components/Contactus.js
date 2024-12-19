@@ -1,7 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./Footer";
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+
+    fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData), // Send form data to the backend
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to save data");
+        }
+        return response.text();
+      })
+      .then((message) => {
+        alert(message); // Show success message
+        setFormData({ name: "", email: "", message: "" }); // Clear form fields
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again.");
+      });
+  };
+
   return (
     <div className="bg-blue-900 text-center text-gray-800">
       {/* Contact Info Section */}
@@ -22,7 +60,8 @@ const ContactUs = () => {
           </div>
           <h3 className="text-lg font-bold mt-4">OUR MAIN OFFICE</h3>
           <p className="text-sm mt-2">
-          SY no. 42, Near J R Layout Haralur, <br /> Bengaluru- 560102, Karnataka, India
+            SY no. 42, Near J R Layout Haralur, <br /> Bengaluru- 560102,
+            Karnataka, India
           </p>
         </div>
 
@@ -70,26 +109,35 @@ const ContactUs = () => {
       {/* Contact Form Section */}
       <div className="bg-blue-200 py-12">
         <h2 className="text-4xl font-bold text-blue-900 mb-6">Contact Us</h2>
-        <div className="max-w-lg mx-auto">
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
           <input
             type="text"
+            name="name"
             placeholder="Enter your Name"
+            value={formData.name}
+            onChange={handleChange}
             className="w-full p-3 mb-4 border rounded"
           />
           <input
             type="email"
+            name="email"
             placeholder="Enter a valid email address"
+            value={formData.email}
+            onChange={handleChange}
             className="w-full p-3 mb-4 border rounded"
           />
           <textarea
+            name="message"
             placeholder="Enter your Message"
             rows="4"
+            value={formData.message}
+            onChange={handleChange}
             className="w-full p-3 mb-4 border rounded"
           ></textarea>
-          <button className="w-full bg-blue-700 text-white py-3 rounded hover:bg-blue-600">
+          <button type="submit" className="w-full bg-blue-700 text-white py-3 rounded hover:bg-blue-600">
             Submit
           </button>
-        </div>
+        </form>
       </div>
 
       {/* Footer */}
