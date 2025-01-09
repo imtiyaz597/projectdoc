@@ -28,7 +28,7 @@ export default function TrainerProfile() {
       id: "education",
       label: "Education",
       heading: "Educational Background",
-      link: "contact@edzest.org",
+      link: "mailto:contact@edzest.org", // Change to mailto link
       linkText: "Send an email",
       description:
         "Certified PMP® instructor with formal education in project management and leadership, ensuring the highest quality training.",

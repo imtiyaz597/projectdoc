@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"; // Import Link
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-800 py-6 border-t shadow-md">
+    <footer className="bg-white-100 shadow-md text-gray-800 py-6 border-t shadow-md">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -23,6 +23,7 @@ const Footer = () => {
               <li><Link to="/about" className="hover:text-blue-500">About Us</Link></li>
               <li><Link to="/privacypolicy" className="hover:text-blue-500">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions" className="hover:text-blue-500">Terms & Conditions</Link></li>
+              <li><Link to="/refundpolicy" className="hover:text-blue-500">Refund Policy</Link></li>
             </ul>
           </div>
 
@@ -30,7 +31,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-3">Help & Support</h4>
             <ul className="space-y-2">
               <li><Link to="/contact" className="hover:text-blue-500">Contact Us</Link></li>
-              <li><Link to="/refund-policy" className="hover:text-blue-500">Refund Policy</Link></li>
+           
             </ul>
           </div>
         </div>

@@ -15,17 +15,24 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center space-x-4">
           <Link to="/">
-            <img src={Logo} alt="Logo" className="h-28 w-24 ml-10 object-contain"  />
+            <img src={Logo} alt="Logo" className="h-28 w-32 ml-10 object-contain" />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-12 text-gray-700 font-medium">
+        <nav className="hidden md:flex space-x-14 text-gray-700 font-medium">
           <Link to="/training" className="hover:text-purple-600 ml-60">Training</Link>
-          <Link to="/mock-exam" className="hover:text-purple-600 ml-60">Mock Exam</Link>
-          <Link to="/about" className="hover:text-purple-600 ml-60">About us</Link>
-          <Link to="/contact" className="hover:text-purple-600 ml-60">Contact us</Link>
-          <Link to="/blogs" className="hover:text-purple-600 ml-60">Blogs</Link>
+          <a 
+            href="https://cards.edzest.org/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-purple-600 ml-60"
+          >
+            Flashcards
+          </a>
+          <Link to="/mock-exam" className="hover:text-purple-600 ml-60">Mock&nbsp;Exam</Link>
+          <Link to="/about" className="block text-gray-700 hover:text-purple-600">About&nbsp;us</Link>
+          <Link to="/contact" className="block text-gray-700 hover:text-purple-600">Contact&nbsp;us</Link>
         </nav>
 
         {/* Hamburger Menu for Mobile */}
@@ -47,10 +54,17 @@ const Navbar = () => {
         <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
           <nav className="space-y-4">
             <Link to="/training" className="block text-gray-700 hover:text-purple-600">Training</Link>
+            <a 
+              href="https://cards.edzest.org/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block text-gray-700 hover:text-purple-600"
+            >
+              Flashcards
+            </a>
             <Link to="/mock-exam" className="block text-gray-700 hover:text-purple-600">Mock Exam</Link>
             <Link to="/about" className="block text-gray-700 hover:text-purple-600">About us</Link>
             <Link to="/contact" className="block text-gray-700 hover:text-purple-600">Contact us</Link>
-            <Link to="/blogs" className="block text-gray-700 hover:text-purple-600">Blogs</Link>
           </nav>
         </div>
 

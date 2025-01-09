@@ -11,6 +11,8 @@ const ContactSection = () => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -19,12 +21,25 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim() || !formData.message.trim()) {
+      alert("Please fill in all required fields!");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    const payload = {
+      name: `${formData.firstName} ${formData.lastName}`,
+      email: formData.email,
+      message: formData.message,
+    };
+
     fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData), // Send form data to backend
+      body: JSON.stringify(payload),
     })
       .then((response) => {
         if (!response.ok) {
@@ -33,7 +48,7 @@ const ContactSection = () => {
         return response.text();
       })
       .then((message) => {
-        alert(message); // Show success message
+        alert(message);
         setFormData({
           firstName: "",
           lastName: "",
@@ -41,11 +56,14 @@ const ContactSection = () => {
           phone: "",
           subject: "",
           message: "",
-        }); // Clear form fields
+        });
       })
       .catch((error) => {
         console.error("Error:", error);
         alert("An error occurred. Please try again.");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
   };
 
@@ -97,30 +115,6 @@ const ContactSection = () => {
             </div>
 
             <div>
-              <label className="block text-gray-700">Phone Number</label>
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Phone Number"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-gray-700">Subject</label>
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                placeholder="Subject"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </div>
-
-            <div>
               <label className="block text-gray-700">Message</label>
               <textarea
                 rows="4"
@@ -134,9 +128,10 @@ const ContactSection = () => {
 
             <button
               type="submit"
-              className="w-full bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className={`w-full ${isSubmitting ? "bg-gray-400" : "bg-indigo-500 hover:bg-indigo-600"} text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+              disabled={isSubmitting}
             >
-              Send
+              {isSubmitting ? "Sending..." : "Send"}
             </button>
           </div>
         </form>

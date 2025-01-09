@@ -2,38 +2,38 @@ import React from "react";
 
 const testimonials = [
     {
-      name: "John Doe",
+      name: "Jawed Ahmad",
       role: "Project Manager",
       feedback:
-        "The PMP certification training at Edzest helped me gain a comprehensive understanding of project management. The hands-on approach and real-world examples made the learning process engaging.",
+        "I am thrilled to share my successful journey of passing the PMP exam with Above Target in all three domains, and it wouldn’t have been possible without the incredible support of Mr. Amit",
       image: "/assets/Jawed Ahmad.png", // Correct path from public folder
     },
     {
-      name: "Jane Smith",
+      name: "Junaid Amid Khan",
       role: "Business Analyst",
       feedback:
-        "The support provided throughout the course was exceptional. The personalized guidance and resources helped me achieve my certification smoothly.",
+        "PMP & ACP courses provided a lot of valuable insights and advanced techniques that I was looking for. The instructor is clearly knowledgeable and passionate about the subject, which made the lessons .",
       image: "/assets/junaid Amid khan.png", // Correct path from public folder
     },
     {
-      name: "Michael Brown",
+      name: "Kailash Nair",
       role: "Software Engineer",
       feedback:
-        "Edzest's innovative teaching methods and flexible learning schedule made the preparation for PMP certification seamless.",
+        "I had a fantastic experience learning and training for my PMP Certification with Amit at Edzest. Amit’s approach is exceptional—he not only shifts your mindset to think like a project manager but also provides comprehensive support to help .",
       image: "/assets/Kalesh Nair.png", // Correct path from public folder
     },
     {
-      name: "Emily Davis",
+      name: "Kishore kumar chelikhani",
       role: "Team Lead",
       feedback:
-        "The course structure and interactive sessions allowed me to grasp difficult concepts efficiently. I highly recommend Edzest for PMP certification training.",
+        "On behalf of AI Infinity Holdings Ltd, I am pleased to share our enthusiastic endorsement of Amit, founder of Edzest Education Services. Amit recently conducted a comprehensive project management .",
       image: "/assets/Kishore kumar chelikhani.png", // Correct path from public folder
     },
     {
-      name: "William Wilson",
+      name: "Lakmal jeewananda",
       role: "Senior Consultant",
       feedback:
-        "Outstanding experience! The tailored support and updated study materials made a huge difference in my certification journey.",
+        "Thanks, Amith. The course is really good, especially because the questions in the MOC exams are clearly structured and resemble the actual exam. It has helped me prepare effectively for the PMP exam, giving me much more confidence..",
       image: "/assets/Lakmal jeewananda.png", // Correct path from public folder
     },
 ];
@@ -60,9 +60,15 @@ const Testimonials = () => {
               </h3>
               <p className="text-gray-600 italic text-center">{testimonial.role}</p>
               <p className="text-gray-600 mt-4 text-center">{testimonial.feedback}</p>
-              <button className="mt-4 px-4 py-2 bg-[#4748ac] text-white rounded hover:bg-[#37378c] block mx-auto">
+              {/* Read more button with link */}
+              <a
+                href="https://www.google.com/search?q=edzest+education+services&rlz=1C1ONGR_enIN998IN998&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQkxNTUzajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8" // Replace with the actual Google Reviews page URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 px-4 py-2 bg-[#4748ac] text-white rounded hover:bg-[#37378c] block text-center"
+              >
                 Read more
-              </button>
+              </a>
             </div>
           ))}
         </div>

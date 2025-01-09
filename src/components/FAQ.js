@@ -2,30 +2,42 @@ import React, { useState } from "react";
 import './FAQ.css';
 const faqs = [
   {
-    question: "What is PMP Certification?",
+    question: "What is PMP® Certification?",
     answer:
       "PMP (Project Management Professional) Certification is a globally recognized certification for project managers, demonstrating their competence in leading and directing projects.",
   },
   {
-    question: "Who can apply for PMP Certification?",
+    question: "Who can apply for PMP® Certification?",
     answer:
       "Anyone with a high school diploma, 35 contact hours of project management education, and a minimum of 3 years of project management experience can apply for PMP Certification.",
   },
   {
-    question: "How long is the PMP Certification valid?",
+    question: "How long is the PMP® Certification valid?",
     answer:
       "PMP Certification is valid for 3 years. After 3 years, you must earn 60 PDUs (Professional Development Units) to maintain your certification.",
   },
   {
-    question: "What are the prerequisites for PMP Certification?",
+    question: "What are the prerequisites for PMP® Certification?",
     answer:
       "You need a high school diploma or equivalent, 35 contact hours of project management education, and at least 3 years of project management experience.",
   },
   {
-    question: "How do I maintain my PMP Certification?",
+    question: "How do I maintain my PMP® Certification?",
     answer:
       "To maintain your PMP Certification, you need to earn 60 PDUs every 3 years through professional development activities like attending training, conferences, or working on relevant projects.",
   },
+  {
+    question: "How should I prepare for the PMP® exam?",
+    answer:
+      "Preparation involves completing 35 hours of training, studying the PMBOK® Guide, using online resources, taking mock exams, and following a structured plan.",
+  },
+  {
+    question: "What topics are covered in the PMP® exam?",
+    answer:
+      " ",
+  },
+  
+
 ];
 
 const FAQ = () => {

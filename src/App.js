@@ -19,6 +19,9 @@ import Login from "./components/Login";
 import Contactus from "./components/Contactus";
 import PrivacyPolicy from "./components/Privacy Policy";
 import TermsConditions from "./components/Terms & Conditions";
+import RefundPolicy from "./components/Refund Policy"; 
+import JoinNowForm from './components/Joinnow';
+
 function App() {
   return (
     <div className="App">
@@ -56,6 +59,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/terms&conditions" element={<TermsConditions />} />
+          <Route path="/refundpolicy" element={<RefundPolicy />} />
+          <Route path="/join-us" element={<JoinNowForm />} /> 
+
           {/* Catch-All Redirect */}
           <Route path="*" element={<Hero />} /> {/* Invalid route goes to home */}
         </Routes>
