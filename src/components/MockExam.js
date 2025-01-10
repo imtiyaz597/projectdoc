@@ -21,9 +21,11 @@ const PMPPracticeMockExams = () => { // Defining a functional React component na
           <p className="text-gray-500 mt-4">
             Get Real Exam-Like Questions and Expert Insight {/* Hero description */}
           </p>
-          <button className="bg-blue-500 text-white px-6 py-3 rounded-lg mt-4 hover:bg-blue-600 transition">
-            Buy Now {/* Call-to-action button */}
-          </button>
+          <a href="https://exams.edzest.org/learn/PMP-mock-exams-by-edzest" target="_blank" rel="noopener noreferrer">
+  <button className="bg-blue-500 text-white px-6 py-3 rounded-lg mt-4 hover:bg-blue-600 transition">
+    Buy Now {/* Call-to-action button */}
+  </button>
+</a>
         </div>
         <div className="mt-8 ml: md:mt-0"> {/* Container for the image in the hero section */}
           <img

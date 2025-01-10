@@ -29,9 +29,15 @@ export default function PreparationOptions() {
             <li>E-book</li>
             <li>Summary books</li>
           </ul>
-          <button className="bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded">
-            Enroll Now
-          </button>
+          <a
+            href="https://exams.edzest.org/learn/PMP-mock-exams-by-edzest"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded">
+              Enroll Now
+            </button>
+          </a>
         </div>
 
         {/* Card 2 */}
@@ -48,11 +54,16 @@ export default function PreparationOptions() {
             <li>E-book</li>
             <li>Summary books</li>
           </ul>
-          <button className="bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded">
-            Enroll Now
-          </button>
+          <a
+            href="https://exams.edzest.org/learn/PMP-mock-exams-by-edzest"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded">
+              Enroll Now
+            </button>
+          </a>
         </div>
-        
       </div>
     </div>
   );

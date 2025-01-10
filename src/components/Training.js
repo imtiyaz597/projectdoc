@@ -30,14 +30,15 @@ const Hero = () => {
               certification.
             </p>
             <div>
-              <a
-                href="https://your-enroll-link.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
-              >
-                Enroll Now
-              </a>
+            <a
+  href="https://exams.edzest.org/learn/PMP--exam-prep-March--25-batch"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+>
+  Enroll Now
+</a>
+
             </div>
           </div>
 
@@ -63,9 +64,15 @@ const Hero = () => {
             <p className="text-gray-600">
               Learn from an Authorised Training Partner, ATP of Project Management Institute (PMI).
             </p>
-            <button className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-6 rounded transition duration-300">
-              Enroll Now
-            </button>
+            <a
+  href="https://exams.edzest.org/learn/PMP--exam-prep-March--25-batch"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+>
+  Enroll Now
+</a>
+
           </div>
           <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
             <img
@@ -177,8 +184,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="col-span-1 md:col-span-2 lg:col-span-3 flex justify-center my-8">
-            <a
-              href="https://exams.edzest.org/learn/batch/PMP-Exam-Prep-Jan"
+          <a
+              href="https://exams.edzest.org/learn/PMP--exam-prep-March--25-batch"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"

@@ -13,7 +13,7 @@ const Hero = () => {
           Your trusted partner in mastering project management with a focused approach to PMP® certification.
         </p>
         <a
-              href="https://exams.edzest.org/learn/batch/PMP-Exam-Prep-Jan"
+              href="https://exams.edzest.org/learn/PMP--exam-prep-March--25-batch"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
