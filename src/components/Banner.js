@@ -21,7 +21,7 @@ const Announcement = () => {
       <div className="flex-1">
         <h2 className="text-2xl md:text-3xl font-bold text-pink-600 mb-4">
           Next PMP® training batch starting from{" "}
-          <span className="text-purple-600">8 th March</span>
+          <span className="text-purple-600">8th March</span>
         </h2>
         <p className="text-gray-600 text-lg mb-6 leading-relaxed">
           Learn from an Authorized Training Partner, <br />
