@@ -30,9 +30,11 @@ const ContactSection = () => {
 
     const payload = {
       name: `${formData.firstName} ${formData.lastName}`,
-      email: formData.email,
-      message: formData.message,
+      email: `${formData.email}`,
+      message: `${formData.message}`,     
     };
+
+     console.log(payload)
 
     fetch("http://localhost:5000/contact", {
       method: "POST",
@@ -40,6 +42,7 @@ const ContactSection = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(payload),
+      
     })
       .then((response) => {
         if (!response.ok) {
@@ -132,7 +135,7 @@ const ContactSection = () => {
               disabled={isSubmitting}
             >
               {isSubmitting ? "Sending..." : "Send"}
-            </button>
+            </button>     
           </div>
         </form>
       </div>

@@ -57,7 +57,7 @@ function App() {
           <Route path="/contact" element={<Contactus />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} /> 
           <Route path="/terms&conditions" element={<TermsConditions />} />
           <Route path="/refundpolicy" element={<RefundPolicy />} />
           <Route path="/join-us" element={<JoinNowForm />} /> 
