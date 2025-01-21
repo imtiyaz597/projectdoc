@@ -21,6 +21,7 @@ import PrivacyPolicy from "./components/Privacy Policy";
 import TermsConditions from "./components/Terms & Conditions";
 import RefundPolicy from "./components/Refund Policy"; 
 import JoinNowForm from './components/Joinnow';
+import WhatsAppChat from "./components/Whatsappchat"; // WhatsApp Chat component
 
 function App() {
   return (
@@ -65,6 +66,9 @@ function App() {
           {/* Catch-All Redirect */}
           <Route path="*" element={<Hero />} /> {/* Invalid route goes to home */}
         </Routes>
+
+        {/* WhatsApp Chat Button */}
+        <WhatsAppChat />
       </BrowserRouter>
     </div>
   );
