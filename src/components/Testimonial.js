@@ -3,35 +3,35 @@ import React from "react";
 const testimonials = [
     {
       name: "Jawed Ahmad",
-      role: "Project Manager",
+      
       feedback:
         "I am thrilled to share my successful journey of passing the PMP exam with Above Target in all three domains, and it wouldn’t have been possible without the incredible support of Mr. Amit",
       image: "/assets/Jawed Ahmad.png", // Correct path from public folder
     },
     {
       name: "Junaid Amid Khan",
-      role: "Business Analyst",
+      
       feedback:
         "PMP & ACP courses provided a lot of valuable insights and advanced techniques that I was looking for. The instructor is clearly knowledgeable and passionate about the subject, which made the lessons .",
       image: "/assets/junaid Amid khan.png", // Correct path from public folder
     },
     {
       name: "Kailash Nair",
-      role: "Software Engineer",
+      
       feedback:
         "I had a fantastic experience learning and training for my PMP Certification with Amit at Edzest. Amit’s approach is exceptional—he not only shifts your mindset to think like a project manager but also provides comprehensive support to help .",
       image: "/assets/Kalesh Nair.png", // Correct path from public folder
     },
     {
       name: "Kishore kumar chelikhani",
-      role: "Team Lead",
+      
       feedback:
         "On behalf of AI Infinity Holdings Ltd, I am pleased to share our enthusiastic endorsement of Amit, founder of Edzest Education Services. Amit recently conducted a comprehensive project management .",
       image: "/assets/Kishore kumar chelikhani.png", // Correct path from public folder
     },
     {
       name: "Lakmal jeewananda",
-      role: "Senior Consultant",
+      
       feedback:
         "Thanks, Amith. The course is really good, especially because the questions in the MOC exams are clearly structured and resemble the actual exam. It has helped me prepare effectively for the PMP exam, giving me much more confidence..",
       image: "/assets/Lakmal jeewananda.png", // Correct path from public folder

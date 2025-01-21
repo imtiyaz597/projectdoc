@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Text Content */}
       <div className="lg:w-1/2 text-center lg:text-left space-y-4">
         <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-gray-800">
-          Get <span className="text-purple-600">PMP®</span> certified &<br /> Manage projects <span className="italic">better</span>
+          Get <span className="text-[#4748ac]">PMP®</span> certified &<br /> Manage projects <span className="italic">better</span>
         </h1>
         <p className="text-gray-600">
           Your trusted partner in mastering project management with a focused approach to PMP® certification.
@@ -16,7 +16,7 @@ const Hero = () => {
               href="https://exams.edzest.org/learn/PMP--exam-prep-March--25-batch"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+              className="inline-block bg-[#4748ac] hover:bg-[#37378c] text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
             >
               Enroll Now
             </a>

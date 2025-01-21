@@ -52,7 +52,7 @@ export default function TrainerProfile() {
               onClick={() => setActiveTab(tab.id)}
               className={`px-3 py-1 lg:px-4 lg:py-2 rounded-full font-semibold text-sm lg:text-base ${
                 activeTab === tab.id
-                  ? "bg-purple-600 text-white"
+                  ? "bg-[#4748ac] text-white"
                   : "bg-gray-200 text-gray-600"
               }`}
             >
@@ -75,7 +75,7 @@ export default function TrainerProfile() {
             href={activeContent.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-600 font-semibold underline text-sm lg:text-base"
+            className="text-[#4748ac] font-semibold underline text-sm lg:text-base"
           >
             {activeContent.linkText}
           </a>
@@ -84,7 +84,7 @@ export default function TrainerProfile() {
 
       {/* Trainer Image */}
       <div className="relative w-32 h-32 lg:w-48 lg:h-48 mt-4 lg:mt-0 lg:ml-6">
-        <div className="w-full h-full rounded-full bg-purple-600 flex justify-center items-center">
+        <div className="w-full h-full rounded-full bg-[#4748ac] flex justify-center items-center">
           <img
             src={trainerImg}
             alt="Trainer"

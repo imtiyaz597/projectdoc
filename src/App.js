@@ -13,7 +13,7 @@ import Contact from "./components/Contact";
 import Training from "./components/Training"; // Training page
 import MockExam from "./components/MockExam"; // Mock exam page
 import About from "./components/About"; // About us page
-import Blogs from "./components/Blogs"; // Blogs page
+
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Contactus from "./components/Contactus";
@@ -56,7 +56,6 @@ function App() {
           <Route path="/mock-exam" element={<MockExam />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contactus />} />
-          <Route path="/blogs" element={<Blogs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} /> 
           <Route path="/terms&conditions" element={<TermsConditions />} />

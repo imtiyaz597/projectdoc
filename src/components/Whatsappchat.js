@@ -2,7 +2,7 @@ import React from "react";
 
 const WhatsAppChat = () => {
     const whatsappNumber = "919673332684"; // Your WhatsApp number in international format
-    const message = "Hi! I need assistance with Edzest."; // Pre-filled message
+    const message = "Hi! I want to discuss Edzest's Training Program"; // Pre-filled message
 
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 

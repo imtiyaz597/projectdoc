@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "What topics are covered in the PMP® exam?",
     answer:
-      " ",
+      "The PMP® exam covers People, focusing on leadership and team management; Process, emphasizing project management methodologies; and Business Environment, aligning projects with organizational goals. These domains represent the knowledge areas required for effective project management. ",
   },
   
 

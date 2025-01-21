@@ -15,7 +15,7 @@ export default function PreparationOptions() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 justify-items-center">
         {/* Card 1 */}
         <div className="bg-purple-100 rounded-lg shadow-lg p-8 w-96 text-center">
-          <h2 className="text-xl font-bold text-purple-700 mb-4">PMP® Live Training</h2>
+          <h2 className="text-xl font-bold text-[#4748ac] mb-4">PMP® Live Training</h2>
           <p className="text-gray-800 font-semibold mb-4">
             Master PMP® with Expert-Led Training & Free Mock Exam Access
           </p>
@@ -34,7 +34,7 @@ export default function PreparationOptions() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded">
+            <button className="bg-[#4748ac] hover:bg-[#3737ac] text-white font-semibold py-2 px-6 rounded">
               Enroll Now
             </button>
           </a>
@@ -42,7 +42,7 @@ export default function PreparationOptions() {
 
         {/* Card 2 */}
         <div className="bg-purple-50 rounded-lg shadow-lg p-8 w-96 text-center">
-          <h2 className="text-xl font-bold text-purple-700 mb-4">PMP® Mock Exam</h2>
+          <h2 className="text-xl font-bold text-[#4748ac] mb-4">PMP® Mock Exam</h2>
           <p className="text-gray-800 font-semibold mb-4">
             Ace the PMP® Exam with Realistic Mock Tests
           </p>
@@ -59,7 +59,7 @@ export default function PreparationOptions() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded">
+            <button className="bg-[#4748ac] hover:bg- text-white font-semibold py-2 px-6 rounded">
               Enroll Now
             </button>
           </a>

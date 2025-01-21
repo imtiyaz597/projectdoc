@@ -13,16 +13,16 @@ const PMPPracticeMockExams = () => { // Defining a functional React component na
       <div className="flex flex-col md:flex-row items-center justify-between h-[70vh] px-6 md:px-16">
         {/* Hero section: Styling for layout and responsiveness */}
         <div className="max-w-lg"> {/* Container for text content in the hero section */}
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-600">
+          <h1 className="text-4xl md:text-5xl font-bold text-black-600">
             PMP® Practice <br />
             Mock Exams by{" "}
-            <span className="text-purple-600">Edzest</span> {/* Highlighting the brand name */}
+            <span className="text-[#4748ac]">Edzest</span> {/* Highlighting the brand name */}
           </h1>
           <p className="text-gray-500 mt-4">
             Get Real Exam-Like Questions and Expert Insight {/* Hero description */}
           </p>
           <a href="https://exams.edzest.org/learn/PMP-mock-exams-by-edzest" target="_blank" rel="noopener noreferrer">
-  <button className="bg-blue-500 text-white px-6 py-3 rounded-lg mt-4 hover:bg-blue-600 transition">
+  <button className="bg-[#4748ac] text-white px-6 py-3 rounded-lg mt-4 hover:bg-[#3737ac] transition">
     Buy Now {/* Call-to-action button */}
   </button>
 </a>
@@ -120,7 +120,7 @@ const PMPPracticeMockExams = () => { // Defining a functional React component na
 
           {/* Buy Now Button */}
           <div className="text-center mt-10"> {/* Container for the Buy Now button */}
-            <button className="bg-green-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-green-600 transition">
+            <button className="bg-[#4748ac] text-white px-6 py-3 rounded-lg text-lg hover:bg-[#4748ac]transition">
               Buy Now {/* Call-to-action button */}
             </button>
           </div>
