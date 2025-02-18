@@ -425,6 +425,9 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
+              <Link to="/docs" className="d-block text-gray-700 text-center py-2 text-decoration-none hover:bg-[#4748ac] hover:text-white" onClick={closeMenu}>
+            Project Docs
+          </Link>
               <Link to="/mock-exam" className="d-block text-gray-700 text-center py-2 text-decoration-none hover:bg-[#4748ac] hover:text-white" onClick={closeMenu}>
                 Mock Exam
               </Link>
