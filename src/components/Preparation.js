@@ -59,7 +59,7 @@ export default function PreparationOptions() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-[#4748ac] hover:bg- text-white font-semibold py-2 px-6 rounded">
+            <button className="bg-[#4748ac] hover:bg- text-white font-semibold mt-16 py-2 px-6 rounded">
               Enroll Now
             </button>
           </a>

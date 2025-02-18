@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -18,14 +20,37 @@ import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Contactus from "./components/Contactus";
 import PrivacyPolicy from "./components/Privacy Policy";
-import TermsConditions from "./components/Terms & Conditions";
+import TermsAndConditions from "./components/TermsAndConditions";
 import RefundPolicy from "./components/Refund Policy"; 
 import JoinNowForm from './components/Joinnow';
 import WhatsAppChat from "./components/Whatsappchat"; // WhatsApp Chat component
+import FlashMain from "./FlashcardApp/FlashMain";
+
+
+
+import PMPExamPrep from './components/Services/TrainingServices/PMPExamPrep';
+import Workshop from './components/Services/Workshop/Workshop';
+import ManagingRisk from './components/Services/Workshop/ManagingRisk';
+import AgileApproach from './components/Services/Workshop/AgileApproach';
+import Traditional from './components/Services/Workshop/Traditional';
+import CareerDevelopment from './components/Services/CareerDevelopment/CareerDevelopment';
+import Resume from './components/Services/CareerDevelopment/Resume';
+import Interview from './components/Services/CareerDevelopment/Interview';
+import TrainingServices from './components/Services/TrainingServices/TrainingServices';
+import ProjectFoundation from './components/Services/TrainingServices/ProjectFoundation';
+import DocHome from './components/ProjectDocs/pages/DocHome';
+import Docs from './components/ProjectDocs/pages/Docs';
+import ProjectSidebar from './components/ProjectDocs/ProjectSidebar';
+import ProjectNavbar from './components/ProjectDocs/ProjectNavbar';
+
+
 
 function App() {
+  
   return (
     <div className="App">
+    
+
       <BrowserRouter>
         {/* Navbar will be visible on all pages */}
         <Navbar />
@@ -52,15 +77,64 @@ function App() {
           />
 
           {/* Individual Pages */}
-          <Route path="/training" element={<Training />} />
+          <Route path="/training" element={<Training />} /> 
           <Route path="/mock-exam" element={<MockExam />} />
+          
+          <Route path="/flashcards" element={<FlashMain />} />
+        
+          {/* <Route path="/flashcards" element={<FlashMain />} /> */}
+        <Route path="/agile" element={<FlashMain />} />
+        <Route path="/domain" element={<FlashMain />} />
+        <Route path="/process-groups" element={<FlashMain />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contactus />} />
+          {/* <Route path = '/services' element={<Services/>} /> */}
+          <Route path="/training-services" element={<TrainingServices/>} />
+        <Route path="/project-foundation" element={<ProjectFoundation/>} />
+        <Route path="/pmp-exam-prep" element={<PMPExamPrep />} />
+
+        <Route path="/workshop" element={<Workshop />} />
+        <Route path="/workshop/managing-risk" element={<ManagingRisk />} />
+        <Route path="/workshop/agile-approach" element={<AgileApproach />} />
+        <Route path="/workshop/traditional" element={<Traditional />} />
+
+        <Route path="/career-development" element={<CareerDevelopment />} />
+        <Route path="/career-development/resume" element={<Resume />} />
+        <Route path="/career-development/interview" element={<Interview />} />
+        
           <Route path="/login" element={<Login />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} /> 
-          <Route path="/terms&conditions" element={<TermsConditions />} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
           <Route path="/refundpolicy" element={<RefundPolicy />} />
           <Route path="/join-us" element={<JoinNowForm />} /> 
+
+
+            {/* Project Documentation with Sidebar */}
+            <Route
+            path="/docs"
+            element={
+              <>
+              <ProjectNavbar/>
+              <div style={{display:'flex'}}>
+
+                <ProjectSidebar /> 
+                <DocHome /> 
+                </div>
+                </>
+            }
+          />
+          <Route
+            path="/docs/:slug"
+            element={
+              <>
+                <ProjectNavbar/>
+              <div style={{display:'flex'}}>
+                <ProjectSidebar /> {/* Sidebar on the left */}
+                <Docs /> {/* Documentation content */}
+              </div>
+              </>
+            }
+          />
 
           {/* Catch-All Redirect */}
           <Route path="*" element={<Hero />} /> {/* Invalid route goes to home */}

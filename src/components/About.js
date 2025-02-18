@@ -2,6 +2,7 @@ import React from 'react';
 import aboutimageImg from '../Assets/aboutimage.png';
 import aboutimageImg2 from '../Assets/aboutimage2.png';
 import aboutimageImg3 from '../Assets/aboutimage3.png';
+import TrainerProfile from '../components/Trainer'
 import Footer from "./Footer"; // Assuming Footer.js is a valid component
 
 const AboutEdzest = () => {
@@ -88,6 +89,7 @@ const AboutEdzest = () => {
           </div>
         </div>
       </div>
+      <TrainerProfile />
       <Footer />
     </>
   );

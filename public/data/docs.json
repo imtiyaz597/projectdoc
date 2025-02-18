@@ -1,0 +1,14 @@
+{
+  "html": {
+    "title": "HTML Documentation",
+    "content": "## Introduction\nHTML (HyperText Markup Language) is the standard language for creating web pages.\n\n## Elements\nHTML elements are the building blocks of a webpage.\n\n### Paragraphs\nThe `<p>` tag defines a paragraph in HTML.\n\n### Headings\nHTML provides six levels of headings, from `<h1>` to `<h6>`.\n\n## Attributes\nHTML attributes provide additional information about an element.\n\n### Class and ID\nThe `class` and `id` attributes are used to apply CSS styles and JavaScript behaviors."
+  },
+  "css": {
+    "title": "CSS Documentation",
+    "content": "## Introduction\nCSS (Cascading Style Sheets) is used to style HTML content.\n\n## Selectors\nSelectors are used to target elements in CSS.\n\n### Class Selector\nThe class selector (`.classname`) targets elements with a specific class.\n\n### ID Selector\nThe ID selector (`#idname`) targets elements with a specific ID.\n\n## Properties\nCSS properties define how elements appear.\n\n### Color and Background\nYou can set colors using the `color` and `background-color` properties.\n\n### Box Model\nThe box model consists of margins, borders, padding, and the actual content."
+  },
+  "javascript": {
+    "title": "JavaScript Documentation",
+    "content": "## Introduction\nJavaScript is a programming language used to create interactive web pages.\n\n## Variables\nVariables store data values in JavaScript.\n\n### var, let, and const\n- `var` is function-scoped.\n- `let` and `const` are block-scoped.\n\n## Functions\nFunctions allow you to reuse code.\n\n### Function Declaration\nA function can be declared using the `function` keyword.\n\n### Arrow Functions\nArrow functions provide a shorter syntax for writing functions."
+  }
+}

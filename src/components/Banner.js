@@ -1,19 +1,19 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import pmiLogo from "../Assets/pmilogo.png"; // Make sure the path to your image is correct
 import './Banner.css';
 
 const Announcement = () => {
-  const navigate = useNavigate(); // Hook to navigate to a route
+  // const navigate = useNavigate(); // Hook to navigate to a route
 
   return (
-    <section className="bg-green-100 py-8 px-4 md:px-16 flex flex-col md:flex-row items-center justify-center text-center md:text-center">
+    <section className="bg-green-100 py-8 px-4 md:px-16 flex flex-col md:flex-col items-center justify-center text-center md:text-center">
       {/* Logo */}
-      <div className="mb-4 md:mb-0 md:mr-6">
+      <div className="mb-4 md:mb-0 md:mr-6 ml-4">
         <img
           src={pmiLogo}
           alt="PMI Logo"
-          className="w-20  h-20 md:w-32 md:h-32 object-contain"
+          className="w-20 h-20 md:w-32 md:h-32 object-contain"
           
         />
       </div>
@@ -36,7 +36,7 @@ const Announcement = () => {
   href="https://exams.edzest.org/learn/PMP--exam-prep-March--25-batch"
   target="_blank"
   rel="noopener noreferrer"
-  className="inline-block bg-[#4748ac] hover:bg-[4748ac] text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+  className="inline-block bg-[#4748ac] hover:bg-[4748ac] text-white font-semibold py-3 px-6 rounded-lg transition text-decoration-none duration-300"
 >
   Join Now
 </a>

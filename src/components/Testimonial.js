@@ -65,7 +65,7 @@ const Testimonials = () => {
                 href="https://www.google.com/search?q=edzest+education+services&rlz=1C1ONGR_enIN998IN998&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQkxNTUzajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8" // Replace with the actual Google Reviews page URL
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 px-4 py-2 bg-[#4748ac] text-white rounded hover:bg-[#37378c] block text-center"
+                className="text-decoration-none mt-4 px-4 py-2 bg-[#4748ac] text-white rounded hover:bg-[#37378c] block text-center"
               >
                 Read more
               </a>
