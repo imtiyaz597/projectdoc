@@ -248,9 +248,9 @@ function App() {
           <Route path="/join-us" element={<JoinNowForm />} />
 
           {/* Documentation Pages */}
-          <Route path="/docs" element={<Navigate to="/docs/chapter/1" />} />
+          <Route path="/docs" element={<Navigate to="/docs/:chapterId" />} />
           <Route
-            path="/docs/chapter/:chapterId"
+            path="/docs/:chapterId"
             element={
               <>
                 {/* <ProjectNavbar /> */}

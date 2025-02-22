@@ -156,8 +156,8 @@ const Docs = () => {
   useEffect(() => {
     loadContentData().then((data) => {
       setContentData(data);
-      const chapter = data.find((ch) => ch.id.toString() === chapterId);
-      setSelectedChapter(chapter || null);
+      const chapter = data.find((ch) => ch.id?.toString() === chapterId );
+      setSelectedChapter(chapter || "");
     });
   }, [chapterId]);
 
@@ -167,7 +167,7 @@ const Docs = () => {
     const chapter = contentData.find((ch) => ch.id.toString() === chapterId);
     setSelectedChapter(chapter);
     setSelectedSection(null);
-    navigate(`/docs/chapter/${chapterId}`);
+    navigate(`/docs/${chapterId}`);
     setShowSidebar(false);
   };
 

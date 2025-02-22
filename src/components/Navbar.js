@@ -425,7 +425,7 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <Link to="/:chapterId" className="d-block text-gray-700 text-center py-2 text-decoration-none hover:bg-[#4748ac] hover:text-white" onClick={closeMenu}>
+              <Link to="/docs/:chapterId" className="d-block text-gray-700 text-center py-2 text-decoration-none hover:bg-[#4748ac] hover:text-white" onClick={closeMenu}>
             Project Docs
           </Link>
               <Link to="/mock-exam" className="d-block text-gray-700 text-center py-2 text-decoration-none hover:bg-[#4748ac] hover:text-white" onClick={closeMenu}>
