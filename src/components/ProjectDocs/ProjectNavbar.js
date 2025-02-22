@@ -1,50 +1,22 @@
-import React, { useState } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Navbar, Container, Button } from 'react-bootstrap';
+import useWindowSize from './useWindowSize'; // Custom hook to detect screen size
 
-function ProjectNavbar() {
-  const [expanded, setExpanded] = useState(false);
+const ProjectNavBar = ({ toggleSidebar }) => {
+  const screenWidth = useWindowSize(); // Get current screen width
+  const isMobile = screenWidth < 992; // Bootstrap 'lg' breakpoint (992px)
 
   return (
-    <Navbar 
-      bg="dark" 
-      variant="dark" 
-      expand="lg" 
-      expanded={expanded} 
-      onToggle={() => setExpanded(!expanded)}
-      style={{ padding: "5px 5px", marginTop:"-20px"}} 
-      className="custom-navbar"
-    >
-      <Container>
-        <Navbar.Brand href="/docs" className="fs-5">MDN Clone</Navbar.Brand> {/* Smaller font */}
-        <Navbar.Toggle 
-          aria-controls="basic-navbar-nav" 
-          onClick={() => setExpanded(expanded ? false : true)} 
-        />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/docs/html" onClick={() => setExpanded(false)}>
-              HTML
-            </Nav.Link>
-            <Nav.Link as={Link} to="/docs/css" onClick={() => setExpanded(false)}>
-              CSS
-            </Nav.Link>
-            <Nav.Link as={Link} to="/docs/javascript" onClick={() => setExpanded(false)}>
-              JavaScript Basics
-            </Nav.Link>
-            <NavDropdown title="More" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/docs/node" onClick={() => setExpanded(false)}>
-                Node.js
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/docs/react" onClick={() => setExpanded(false)}>
-                React
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
+    <Navbar bg="dark" variant="dark" expand="lg" className="px-3">
+      {/* Show hamburger icon only on mobile */}
+      {isMobile && (
+        <Button variant="outline-light" onClick={toggleSidebar} className="me-3">
+          ☰
+        </Button>
+      )}
+      <Navbar.Brand href="/">MDN-Like Docs</Navbar.Brand>
     </Navbar>
   );
-}
+};
 
-export default ProjectNavbar;
+export default ProjectNavBar;
