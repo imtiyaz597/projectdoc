@@ -253,7 +253,6 @@ function App() {
             path="/docs/:chapterId"
             element={
               <>
-                {/* <ProjectNavbar /> */}
                 <Docs />
               </>
             }

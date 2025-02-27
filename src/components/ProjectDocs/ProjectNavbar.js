@@ -14,7 +14,7 @@ const ProjectNavBar = ({ toggleSidebar }) => {
           ☰
         </Button>
       )}
-      <Navbar.Brand href="/">MDN-Like Docs</Navbar.Brand>
+      <Navbar.Brand href="/docs">Edzest Docs</Navbar.Brand>
     </Navbar>
   );
 };
