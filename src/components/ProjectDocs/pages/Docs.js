@@ -156,7 +156,7 @@ const Docs = () => {
   useEffect(() => {
     loadContentData().then((data) => {
       setContentData(data);
-      const chapter = data.find((ch) => ch.id?.toString() === chapterId );
+      const chapter = data.find((ch) => ch.id.toString() === chapterId );
       setSelectedChapter(chapter || "");
     });
   }, [chapterId]);
